@@ -27,7 +27,7 @@ function criptografar(){
     document.querySelector('p').innerHTML = "";
     document.getElementById('img-saida').src = "";
     document.getElementById('copiar').style.display = "block";
-
+    document.querySelector(".direita").setAttribute("style", "justify-content: space-between");
 }
 
 function descriptografar(){
@@ -57,5 +57,12 @@ function descriptografar(){
     document.querySelector('p').innerHTML = "";
     document.getElementById('img-saida').src = "";
     document.getElementById('copiar').style.display = "block";
+    document.querySelector(".direita").setAttribute("style", "justify-content: space-between");
     
 }    
+function copiar(){
+
+    navigator.clipboard.writeText(document.querySelector('h2').textContent);
+    document.getElementById('copiar').innerHTML = "Copiado ✅";
+    
+}
