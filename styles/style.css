@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+body {
+
+    background-color: #e5e5e5;
+    font-family: "Inter", sans-serif;
+}
+
+.cabecalho{
+
+    padding: 2% 0% 2% 0%;
+}
+.principal{
+
+    display: flex;
+
+}
+
+.esquerda{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 65%;
+    gap: 15px;
+}
+.digitar-texto{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 90%;
+    height: 80%;
+    padding: 10% 0% 0% 5%;
+
+}
+#areatexto{
+
+    resize: none;
+    border: none;
+    background-color: #e5e5e5;
+    color: #0A3871;
+    font-size: 32px;
+
+}
+.botoes{
+    display: flex;
+    height: 67px;
+    width: 100%;
+    align-items: center;
+    justify-content: space-evenly;
+}
+#cripto{
+
+    width: 328px;
+    font-size: 16px;
+    height: 100%;
+    border-radius: 24px ;
+    background-color: #0A3871;
+    color: #FFFFFF  ;
+
+}
+#descripto{
+
+    width: 328px;
+    font-size: 16px;
+    height: 100%;
+    border-radius: 24px ;
+    color: #0A3871;
+
+}
+
+
+.direita{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 32px;
+    background-color: #FFFFFF;
+    width: 30%;
+    height: 944px;
+    padding: 0% 0% 2% 0%;
+
+}
+.saida-texto{
+
+    text-align: center;
+    
+}
+#copiar{
+
+    width: 328px;
+    font-size: 16px;
+    border-radius: 24px ;
+    height: 67px;
+    color: #0A3871;
+    background-color: #FFFFFF;
+    display: none;
+
+}
+
+.rodape{
+
+
+}
+@media (max-width: 768px ) {
+
+    .cabecalho{
+        
+        padding: 5%;
+    }
+
+    .principal {
+        flex-direction: column;
+        padding: 5%;
+        justify-content: space-between;
+
+        gap: 20px;
+    }
+    .direita{
+
+        width: 95%;
+        height: 250px;
+        align-items: center;
+    } 
+    .esquerda{
+
+        width: 95%;
+    }
+    #img-saida{
+
+        visibility: hidden;
+        width: 0%;
+    }
+}
